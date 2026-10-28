@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeremy253058.github.io/portfolio-cybersecurity/sitemap.xml

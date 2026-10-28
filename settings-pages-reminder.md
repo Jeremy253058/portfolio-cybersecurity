@@ -1,0 +1,1 @@
+GitHub Pages setup note: open Settings → Pages and choose GitHub Actions as the Build and deployment Source. The workflow file is `.github/workflows/pages.yml` and will deploy on pushes to `main`. After selecting GitHub Actions, the workflow should be re-run or a new commit can trigger deployment.

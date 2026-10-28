@@ -1,0 +1,96 @@
+network-interfaces {
+    width: 100%;
+  }
+}
+
+.architecture {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: #0b121a;
+  border: 1px solid rgba(166, 196, 213, .2);
+}
+
+.network-interfaces {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.network-interfaces .architecture-node {
+  width: 100%;
+}
+
+.internal-node {
+  border-color: #62dff3;
+}
+
+.nat-node {
+  border-color: #ffcf7d;
+}
+
+@media (max-width: 650px) {
+  .architecture {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+ </style>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">J<span>.</span> CYBER/LAB</a>
+    <a class="nav-button" href="index.html#projets">← Retour aux projets</a>
+  </header>
+
+  <main class="project-detail">
+    <a class="back-link" href="index.html#projets">← Tous les projets</a>
+
+    <p class="project-label">HOMELAB · ACTIVE DIRECTORY</p>
+    <h1>Conception et sécurisation d'un domaine Windows</h1>
+    <p>
+      Mise en place et étude d'un environnement Active Directory
+      pour pratiquer l'administration des identités, des services
+      réseau et des mécanismes de sécurité Windows.
+    </p>
+
+    <div class="detail-card">
+      <h2>01 — Objectifs</h2>
+      <ul>
+        <li>Comprendre le fonctionnement d'Active Directory Domain Services.</li>
+        <li>Administrer les utilisateurs, les groupes et les ressources du domaine.</li>
+        <li>Vérifier la configuration DNS et l'intégration du poste client.</li>
+        <li>Étudier les paramètres de sécurité SMB et LDAP.</li>
+      </ul>
+    </div>
+
+      <h2>02 — Environnement technique</h2>
+      <div class="detail-card">
+      
+<div class="detail-card">
+  <h2>Architecture du laboratoire</h2>
+  <p>
+    Le laboratoire repose sur un contrôleur de domaine
+    Windows Server 2025 hébergeant Active Directory Domain
+    Services et le service DNS pour le domaine lab-cyber.local.
+  </p>
+
+  
+<div class="architecture">
+  <div class="architecture-node server-node">
+    <span class="architecture-icon">▣</span>
+    <strong>SRV25</strong>
+    <span>Windows Server 2025</span>
+    <span>AD DS · DNS</span>
+    <span>lab-cyber.local</span>
+  </div>
+
+  <div class="network-interfaces">
+    <div class="architecture-node internal-node">
+      <strong>Réseau interne — lab-cyber</strong>
+      <span>192.168.100.10/24</span>
+      <span>DNS : 192.168.100.
